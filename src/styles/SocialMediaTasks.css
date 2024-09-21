@@ -1,0 +1,201 @@
+.social-media-tasks h2 {
+  font-size: 28px; 
+  margin-bottom: 20px;
+  color: white; 
+  font-weight: bold; 
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+  padding: 10px; 
+  background: linear-gradient(90deg, rgba(9, 9, 150, 0.715), rgba(255, 255, 255, 0.5)); 
+  border-radius: 10px; 
+  letter-spacing: 1px;
+}
+
+.social-media-tasks {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+
+.task-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.task-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  background: rgba(245, 245, 245, 0.9); 
+  color:blue;
+}
+
+.task-item .notification-badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 10px;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icon-container svg {
+  margin-right: 10px;
+  color: #333;
+  font-size: 24px;
+  transition: color 0.3s; 
+}
+
+.icon-container:hover svg {
+  color: blue; 
+}
+
+
+@media (max-width: 768px) {
+  .task-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: 480px) {
+    .task-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}
+
+
+.task-item {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background 0.3s; 
+  color: #333;
+  cursor: pointer;
+}
+
+.task-item:hover {
+  transform: translateY(-5px);
+  background: lightblue; 
+  font-weight: bold; 
+  color: #fff; 
+}
+
+
+.icon-container svg {
+  margin-right: 10px;
+  color: white; 
+  font-size: 24px;
+  transition: color 0.3s; 
+}
+
+.icon-container:hover svg {
+  color: #007bff; 
+}
+
+
+.task-item.instagram {
+  background-color: #e1306c;
+  color: #fff; 
+}
+
+.task-item.instagram:hover {
+  color: #000; 
+}
+
+.task-item.facebook {
+  background-color: #3b5998;
+  color: #fff; 
+}
+
+.task-item.facebook:hover {
+  color: #000; 
+}
+
+.task-item.twitter {
+  background-color: #1da1f2;
+  color: #fff; 
+}
+
+.task-item.twitter:hover {
+  color: #000; 
+}
+
+.task-item.youtube {
+  background-color: #ff0000;
+  color: #fff; 
+}
+
+.task-item.youtube:hover {
+  color: #000; 
+}
+
+.task-item.telegram {
+  background-color: #0088cc;
+  color: #fff; 
+}
+
+.task-item.telegram:hover {
+  color: #000; 
+}
+
+.task-item.linkedin {
+  background-color: #0077b5;
+  color: #fff; 
+}
+
+.task-item.linkedin:hover {
+  color: #000; 
+}
+@media (max-width: 768px) {
+  .task-container {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .task-container {
+    grid-template-columns: repeat(1, 1fr); 
+  }
+
+  .social-media-tasks h2 {
+    font-size: 20px; 
+  }
+
+  .task-item {
+    padding: 8px; 
+  }
+}
+
+
+
+

@@ -1,0 +1,125 @@
+.header-with-marquee {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #f0f0f0; 
+    border-bottom: 2px solid #ddd; 
+    box-sizing: border-box;
+  }
+  
+  .marquee-section {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-section {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+  }
+
+  .marquee-container {
+    display: flex;
+    align-items: center;
+    background-color: #f8d348; 
+    padding: 5px 10px;
+    overflow: hidden;
+    border-radius: 4px;
+    width: 100%; 
+     
+  }
+  
+  .announcement-icon {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #ff6600; 
+    flex-shrink: 0; 
+    cursor: pointer;
+  }
+  
+  .marquee-content {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .marquee-content p {
+    display: inline-block;
+    white-space: nowrap;
+    animation: marquee 12s linear infinite;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #0056b3; 
+  }
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%); 
+    }
+    100% {
+      transform: translateX(-100%); 
+    }
+  }
+  
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  .wallet, .earnings, .referrals {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100px; 
+    cursor: pointer;
+  }
+  
+  .label {
+    font-size: 0.85rem;
+    font-weight: bold;
+  }
+  
+  .amount {
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .icon {
+    font-size: 1.2rem; 
+  }
+  
+  
+  @media (max-width: 768px) {
+    .header-with-marquee {
+      flex-direction: column;
+    }
+  
+  
+    .header-section {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+    }
+  
+    .marquee-section {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .wallet, .earnings, .referrals {
+      width: 30%;
+    }
+  }
+  

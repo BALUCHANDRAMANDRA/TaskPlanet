@@ -1,0 +1,76 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--header-bg-color);
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+}
+
+.wallet, .earnings, .referrals {
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-width: 80px;
+  background-color: var(--card-bg-color);
+}
+
+.wallet .label, .earnings .label, .referrals .label {
+  font-size: 0.85rem;
+  color: var(--text-color);
+  margin-bottom: 0.25rem;
+}
+
+.wallet .amount, .earnings .amount, .referrals .amount {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.amount .icon {
+  font-size: 1.2rem;
+  margin-left: 0.5rem;
+}
+
+.user-avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+@media (max-width: 768px) {
+  .stats {
+    flex-direction: row;
+  }
+
+  .wallet, .earnings, .referrals {
+    margin-bottom: 1rem;
+  }
+
+  .user-avatar {
+    margin-top: 1rem;
+  }
+
+  
+  .wallet .label, .earnings .label, .referrals .label {
+    font-size: 0.7rem; 
+  }
+
+  .wallet .amount, .earnings .amount, .referrals .amount {
+    font-size: 0.9rem; 
+  }
+}
