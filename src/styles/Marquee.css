@@ -17,7 +17,7 @@
     flex-shrink: 0;
   }
   
-  /* Marquee content */
+  
   .marquee-content {
     flex: 1;
     white-space: nowrap;
@@ -25,23 +25,21 @@
     position: relative;
   }
   
-  /* Text animation */
   .marquee-content p {
     display: inline-block;
     white-space: nowrap;
-    animation: marquee 12s linear infinite; /* Adjust speed if needed */
-    font-size: 0.9rem; /* Reduced text size */
-    font-weight: 500; /* Less bold */
-    color: #0056b3; /* Changed text color to a dark blue */
+    animation: marquee 12s linear infinite; 
+    font-size: 0.9rem; 
+    font-weight: 500;
+    color: #0056b3; 
   }
-  
-  /* Keyframe animation for the marquee effect */
+
   @keyframes marquee {
     0% {
-      transform: translateX(100%); /* Start the text outside the right side */
+      transform: translateX(100%); 
     }
     100% {
-      transform: translateX(-100%); /* End the text outside the left side */
+      transform: translateX(-100%); 
     }
   }
   
