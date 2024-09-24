@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaBullhorn } from 'react-icons/fa'; // For the announcement icon
+import { FaBullhorn } from 'react-icons/fa'; 
 import '../styles/Marquee.css';
 
 const Marquee = () => {
